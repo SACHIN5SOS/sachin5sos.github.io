@@ -4,11 +4,1109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>HomePage</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Anton|Ubuntu|Abel|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://use.fontawesome.com/ff45912291.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css">
+
 </head>
+<style>
+    body,html{
+        height:100%;
+    }
+    nav{
+        background-color: rgba(0,0,0,0.4);
+        transition: all 0.2s ease;
+        min-height: 100px;
+
+    }
+    .brand-logo img{
+        margin-top:-25px;
+    }
+    li a:hover{
+        text-decoration: none;
+        color:#dd4b39;
+
+    }
+li a:active{
+    text-decoration-line: none;
+}
+    .nav-wrapper{
+        padding:30px;
+        transition: all 0.1s ease;
+    }
+    .card{
+        max-height: 100%;
+        transition: all 0.1s ease;
+        overflow:hidden;
+    }
+    .card:hover
+    {
+        margin-top: 3px;
+    }
+    .brand-logo{
+        font-weight: bolder;
+    }
+    nav.shrink  {
+  min-height: 70px;
+  background-color: #ffffff;
+    }
+    .items{
+        color:#ffffff;
+    }
+    .items.changecolor{
+        color:orangered;
+    }
+    .nav-wrapper.shrinkthis{
+        padding:10px;
+    }
+    .heropage
+    {
+
+    background-image: url('images/img-2.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height:500px;
+    }
+    h3{
+        color:bisque;
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .container-2 input#search{
+        border:2px solid white ;
+        background-color:#ffffff;
+        font-size:20px;
+        color:#33383b;
+    }
+    .searchicon{
+        background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        padding:5px;
+        height: 103%;
+        margin-top:-0.2%;
+        width:20%;
+        left:82%;
+        text-align:center;
+    }
+    .text-1{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        color: lightslategray;
+    }
+    .third-section{
+        background-image: url('images/img-1.jpg');
+        background-size: cover;
+        max-height: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .countersection{
+
+        background-image: url('images/img3.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .slidethis {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+
+
+
+/* visited link */
+
+
+/* selected link */
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  .fa {
+
+  color: #292c2f;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: Azure;
+  transition:all 0.3s ease;
+}
+
+.fa:hover {
+
+    text-decoration: none;
+}
+.fa-facebook:hover {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter:hover {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google:hover {
+  background: #dd4b39;
+  color: white;
+}
+
+
+    .footer-distributed{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+
+}
+
+.footer-distributed h3 span{
+  color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #5383d3;
+  text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+ .stepsicons{
+    transition:all ease-out 0.5s;
+    cursor:pointer;
+}
+.stepsicons:hover{
+    color:tomato;
+    margin-top:-10px;
+}
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+
+}
+    @media(max-width:500px){
+       h3{ font-size:30px;
+
+    }
+    }
+    .loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  width:70%;
+  line-height: 40px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+@media(min-width:1200px){
+#modal1 { width: 30% !important ; height:83% !important;  overflow-y: hidden !important ; max-height:100% !important; }
+#modal2{width: 30% !important ; height:92% !important; overflow-y: hidden !important ; max-height:100% !important;}
+}
+@media(max-width:500px){
+  #modal1{
+    width:100% !important;
+    min-height:100vh !important;
+    margin-bottom: 30px !important;
+  }
+  #modal2{
+    width:100% !important;
+
+  }
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354C8C;
+}
+.loginBtn--facebook:before {
+  border-right: #364e92 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+}
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+</style>
 <body>
-    <h1>
-        Hello guys
-    </h1>
+    <header class="heropage">
+        <div class="navbar-fixed">
+        <nav>
+                <div class="nav-wrapper">
+                  <a href="#" class="brand-logo logo logo1 " style=" color:#dd4b39; display:none;"><img class="hidden-sm-down" src="images\logo1.png" height=80px width=100px>GlueSpark</a>
+                  <a href="#" class="brand-logo logo logo2" style="color:#dd4b39; font-weight:strong;">Gluespark</a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse "><i class="large black-text material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html" class="items ">Home</a></li>
+                    <li  style="list-style-type:none;"><a  href="#" class="dropdown-button  items" data-constrainWidth="false" data-hover="true" data-beloworigin="true" data-activates="dropdown1" data-alignment="right">Companies</a></li>
+                    <li><a  class=" items modal-trigger" href="#modal1">Login</a></li>
+                    <li><a  class="items modal-trigger"  href="#modal2" >SignUp</a></li>
+                  </ul>
+                </div>
+            </nav>
+            </div>
+            <br>
+            <br>
+
+
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal  modal-fixed-footer" >
+          <div class="row">
+            <div class="modal-content">
+              <h5 class="text-center" style="color:#33383b;">LogIn</h5>
+
+
+                    <div>
+                      <center><button class="loginBtn loginBtn--facebook">Login with Facebook</button></center>
+                      <center><a href="#"><img src="images/google_login.png"></a></center>
+                    </div>
+                    <h5 class="text-center" style="color:#33383b;">LogIn up via email</h5>
+                    <br>
+                    <form>
+                        <center>
+                            <div class="input-field col-md-8">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">&nbsp; &nbsp;Username</label>
+                                  </div>
+                                </center>
+                        <center>
+                                <div class="input-field col-md-8">
+                                        <input id="last_name" type="password" class="validate">
+                                        <label for="last_name">&nbsp; &nbsp;Password</label>
+                            </div>
+                        </center>
+                    </form>
+              </div>
+
+            <div class="modal-footer">
+                <div class="center-align">
+              <button class="modal-action btn waves-effect waves-green">LogIn</button>
+              <button class="modal-action modal-close btn waves-effect waves-green">Close</button>
+                </div>
+            </div>
+            </div>
+
+          </div>
+          <!-- Modal two-->
+          <div id="modal2" class="modal  modal-fixed-footer">
+                <div class="modal-content">
+
+                        <h5 class="text-center" style="color:#33383b; font-weight:bold;">Fill your details</h5>
+                        <br>
+                        <form>
+                            <center>
+                                <div class="input-field col-md-8">
+                                        <input id="last_name" type="text" class="validate">
+                                        <label for="last_name">&nbsp; &nbsp;First Name</label>
+                                      </div>
+                            </center>
+                            <center>
+                                    <div class="input-field col-md-8">
+                                            <input id="last_name" type="text" class="validate">
+                                            <label for="last_name">&nbsp; &nbsp;Last Name</label>
+                                          </div>
+                                </center>
+
+                                <center>
+                                        <div class="input-field col-md-8">
+                                                <input id="last_name" type="text" class="validate">
+                                                <label for="last_name">&nbsp; &nbsp;Email</label>
+                                              </div>
+                                    </center>
+
+                            <center>
+                                    <div class="input-field col-md-8">
+                                            <input id="last_name" type="password" class="validate">
+                                            <label for="last_name">&nbsp; &nbsp;Password</label>
+                                </div>
+                            </center>
+
+                            <center>
+                                    <div class="input-field col-md-8">
+                                            <input id="dob" type="text" class="datepicker">
+                                            <label for="dob">&nbsp; &nbsp; Date Of Birth</label>
+                                          </div>
+                                </center>
+                        </form>
+                  </div>
+                <div class="modal-footer">
+                    <div class="text-center">
+                  <button class="modal-action btn waves-effect waves-green">SignUp</button>
+                  <button class="modal-action modal-close btn waves-effect waves-green">Close</button>
+                    </div>
+                </div>
+              </div>
+
+
+
+
+            <ul id="dropdown1" class="dropdown-content text-center" style="width:20%;">
+                    <li class="text-center"><a href="substore2.html">SabStore</a></li>
+                    <li class="text-center"><a href="#!">RealTaste</a></li>
+                    <li class="text-center"><a href="#">Goofie</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="sass.html">Home</a></li>
+                    <li><a href="badges.html">Companies</a></li>
+                    <li><a  class=" items modal-trigger" href="#modal1">LogIn</a></li>
+                    <li><a class=" items modal-trigger" href="#modal2">SignUp</a></li>
+                  </ul>
+
+
+
+    <br>
+    <br>
+    <br>
+
+    <div class="main">
+            <h3 class="center-align">
+                <br>
+
+                <span class="first-word">Rate Products &amp; Earn Rewards</span><br>
+                <span class="third-word">Help companies to grow</span>
+                <center>
+
+                        <div class="col-md-6 container-2">
+                                <form>
+                                        <div class="input-field">
+
+                                        <input id="search" type="search" placeholder="Search for companies"  class="black-text" onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Search for companies'"  required/>
+                                        <i class="searchicon material-icons white-text" onclick="shubham();">search</i>
+                                        </div>
+                                </form>
+                        </div>
+
+        </center>
+            </h3>
+    </div>
+    </header>
+
+    <section>
+        <header class="text-center">
+            <h4 style="color:#464646">Help Companies To Build  Customer Friendly Products.</h4>
+            <Br>
+        </header>
+        <section class="steps">
+            <div class="row">
+                <div class="col-md-3 ">
+                    <center>
+                    <i class="large material-icons stepsicons">account_circle</i>
+                    <h5  style="color:#464646; font-family: 'Open Sans',sans-serif;">LogIn</h5>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                    <i class="large material-icons stepsicons">rate_review</i>
+                    <h5 style="color:#464646; font-family: 'Open Sans',sans-serif;">Give reviews</h5>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                    <i class="large material-icons stepsicons" >redeem</i>
+                    <h5 style="color:#464646; font-family: 'Open Sans',sans-serif;">Earn Rewards</h5>
+                    </center>
+                </div>
+                <div class="col-md-3 ">
+                    <center>
+                    <i class="large material-icons stepsicons">show_chart</i>
+                    <h5 style="color:#464646; font-family: 'Open Sans',sans-serif;">Help Companies</h5>
+                    </center>
+                </div>
+            </div>
+        </section>
+        <br>
+        <hr>
+
+    </section>
+    <hr>
+    <section class="third-section">
+        <br>
+
+            <div class="container">
+                <h4 class="text-center" style="color: #464646; font-family: 'Open Sans',sans-serif; font-weight: strong; ">
+                    New Companies In Our Community
+                </h4>
+                <br>
+                <br>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images\sublogo.png" height=85px>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">SabStore<i class="material-icons right">more_vert</i></span>
+                                <p>
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Rate
+                                    <i class="material-icons right">send</i>
+                                </button>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title Orange-text text-darken-4">SabStore<i class="material-icons right">close</i></span>
+                                <p>SabStore is a startup based on the idea of delivering food to hostel student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images\bluehawks_Logo-1200x630.jpg" height=85px >
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">BlueHawks <i class="material-icons right">more_vert</i></span>
+                                <p>
+                                    <button class="btn waves-effect waves-light" type="submit" name="action">Rate
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title Orange-text text-darken-4">BlueHawks<i class="material-icons right">close</i></span>
+                                <p>Best Institution in Punjab for Summer Training, Industrial Training, IELTS Coaching, Multimedia Courses etc. </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images\goofie.jpg" height=85px>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Goofie<i class="material-icons right">more_vert</i></span>
+                                <p>
+                                    <button class="btn waves-effect waves-light" href="substore2.html" type="submit"  name="action">Rate
+                                    <i class="material-icons right">send</i>
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title Orange-text text-darken-4">Goofie</span><i class="material-icons right">close</i></span>
+                                <p>Goofie is a startup company which sell customized T-shirts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images\REALTASTE.png" height=85px>
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">RealTaste<i class="material-icons right">more_vert</i></span>
+                                    <p>
+                                        <button class="btn waves-effect waves-light" type="submit" name="action">Rate
+                                        <i class="material-icons right">send</i>
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title Orange-text text-darken-4">SabStore<i class="material-icons right">close</i></span>
+                                    <p>RealTaste is restaurant which provides nonveg and veg food since  2000</p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="item">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images\sublogo.png" height=85px;>
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">SabStore<i class="material-icons right">more_vert</i></span>
+                                    <p>
+                                        <button class="btn waves-effect waves-light" type="submit" name="action">Rate
+                                        <i class="material-icons right">send</i>
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title Orange-text text-darken-4">SabStore<i class="material-icons right">close</i></span>
+                                    <p>SabStore is a startup based on the idea of delivering food to hostel student</p>
+                                </div>
+                            </div>
+                    </div>
+
+
+                </div>
+        </div>
+
+    </section>
+    <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xm-12 col-xl-6 showcase-left">
+                <h5 class="black-text text-center">
+                    Earn Exciting Prices by giving feedback to companies.
+
+                </h5>
+                <h5 class=" text-center text-1 " style="line-height: 40px;" >
+                        Give feedbacks to companies <br> Be the voice of users <br>Earn rewards and specials gift coupons.
+                        <BR>
+                        <br>
+                        <i style="color:#292c2f; font-family:'Ubuntu', sans-serif"><i class="fa fa-quote-left"></i> WE ALL NEED PEOPLE WHO WILL GIVE FEEDBACK THATS HOW WE IMPROVE.<i class="fa fa-quote-right"></i></i>
+                        <br>-Bill Gates
+                </h5>
+
+            </div>
+                        <hr>
+            <div class="col-sm-10 col-md-6 col-lg-6 col-xm-10 col-xl-6 showcase-right">
+                <br class="hidden-md-up">
+                <br class="hidden-md-up">
+                <div class="container">
+
+                            <h5 class="black-text text-center">Your Feedbacks Will help companies to grow</h5>
+                            <div>
+                                <Center>
+                              <img src="images\giphy (1).gif" height="80%" width="100%">
+                            </Center>
+                            </div>
+                    </div>
+
+            </div>
+        </div>
+    <div class="countersection">
+    <div style="background-color:rgba(0,0,0,0.4);">
+        <br>
+        <br>
+        <br>
+        <div class="container" >
+            <div class="row slidethis">
+                <div class="col-md-4 col-sm-12" style="border-right:thick solid orange; margin-bottom:30px;">
+                  <center>
+                      <i class="large material-icons white-text">assignment_ind</i>
+                      <br>
+                      <p class="white-text"  style="font-size:2rem; font-weight:bolder;"><span class="timer"  data-to="100" data-speed="3000"></span><span>+</span>
+                      </p>
+                      <span class="white-text"  style="font-size:2rem; font-weight:bolder;">Innovators</span>
+                      <br>
+                      <br>
+                  </center>
+
+                </div>
+                <br>
+                <div class="col-md-4 col-sm-12" style="border-right:thick solid orange; margin-bottom:30px;">
+                        <center>
+                            <i class="large material-icons white-text">keyboard_hide</i>
+                            <br>
+                            <p  class="white-text"  style="font-size:2rem; font-weight:bolder;"><span class="timer white-text"  data-to="100" data-speed="3000"></span><span>+</span>
+                            </p>
+                            <span class="white-text"  style="font-size:2rem; font-weight:bolder;">Reviews</span>
+                        </center>
+                        <br>
+                        <br>
+                </div>
+                <br>
+                <div class="col-md-4 col-sm-12" style="border-right:thick solid orange; ">
+                        <center>
+                            <i class="large material-icons white-text">attach_money</i>
+                            <br>
+                            <p class="white-text" style="font-size:2rem; font-weight:bolder;"><span class="timer white-text" data-from="0" data-to="100" data-speed="3000"></span><span>+</span>
+                            </p>
+                            <span class="white-text"  style="font-size:2rem; font-weight:bolder;">Reward points</span>
+                        </center>
+                        <br>
+                        <br>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+    </div>
+    </div>
+    <section >
+
+        <center>
+            <h3 style="color:#464646; font-family: 'Open Sans',sans-serif;">Testimonials</h3>
+        </center>
+        <br>
+        <br>
+       <div class="row slidethis justify-content-center">
+            <div class="col-sm-12 col-md-3">
+                <div class="card  hoverable">
+                    <div style="min-height:125px; background: #11998e;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    ">
+
+                    </div>
+                    <center><img style="margin-top:-80px; border:4px solid #ffffff;" src="images\rohit.jpg" alt="" class="rounded-circle responsive-img "  width="120px" height="120px"> </center>
+                    <div class="card-content black-text">
+                        <span class="card-title text-center" style="color:black; font-family:'Open Sans',sans-serif;"><b>Rohit Patiyal</b></span>
+                        <p><i class="fa fa-quote-left"></i> I am very glad to find gluespark. I reviewed a lot of companies here and get rewards
+                        in place of that...</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Read More</a>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <Br>
+
+            <div class="col-sm-12 col-md-3">
+                <div class="card  hoverable">
+                    <div style="min-height:125px; background: #fe8c00;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    " >
+
+                    </div>
+                    <center><img style="margin-top:-80px; border:4px solid #ffffff;" src="images\raj.jpg" alt="" class="rounded-circle responsive-img " width="120px" height="120px"> </center>
+                    <div class="card-content black-text">
+                        <span class="card-title text-center" style="color:black; font-family:'Open Sans',sans-serif;"><b>Raj Singh</b></span>
+                        <p><i class="fa fa-quote-left"></i> I am very glad to find gluespark. I reviewed a lot of companies here and get rewards
+                            in place of that...</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Read More</a>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-sm-12 col-md-3">
+                <div class="card  hoverable">
+                    <div style="min-height:125px; background: #FC466B;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    ">
+                    </div>
+                    <center><img style="margin-top:-80px; border:4px solid #ffffff;" src="images\gurpreet.jpg" alt="" class="rounded-circle responsive-img " width="120px" height="120px"> </center>
+                    <div class="card-content black-text">
+
+                        <span class="card-title text-center" style="color:black; font-family:'Open Sans',sans-serif;"><b>Gurpreet Singh</b></span>
+                        <p><i class="fa fa-quote-left"></i>It feels so good to earn rewards just by giving reviews to some comapnies.</i></p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Read More</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <br>
+    <br>
+    <section style="background: #fc4a1a; margin-bottom:-20px;
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+    background: linear-gradient(to right, #f7b733, #fc4a1a);  "  >
+    <div class="row">
+        <div class="col-sm-12 col-md-8">
+            <br>
+            <br>
+            <h4 style="font-family: 'Open Sans', sans-serif; color:#ffff; font-weight:bold;">Wants to help Companies by giving them feedback?</h4>
+            <h5 style="font-family: 'Open Sans', sans-serif; color:#ffff;">Earn exciting rewards and coupons</h5>
+
+
+        </div>
+
+
+        <div class="col-sm-12 col-md-4" style="text-align:center;">
+            <center>
+                    <br>
+                    <br><br>
+                    <a class="col-sm-10  slidethis waves-effect waves-light btn" style="text-align:center; padding-top:2%;color:white; background-color:#292c2f; border-radius:8px; height:60px;"><i class="material-icons right white-text">trending_up</i>Get Rewards!</a>
+        </center>
+        <br>
+        <br>
+        <br>
+        </div>
+
+    </div>
+    </section>
+    <footer class="footer-distributed">
+
+                  <div class="footer-left">
+
+                    <h3 style="font-family:'Open Sans',sans-serif;">Glue<span style="font-family:'Open Sans',sans-serif;">Spark</span></h3>
+
+                    <p class="footer-links">
+                      <a href="#">Home</a>
+                      <br>
+                      <a href="#">Companies</a>
+                      <br>
+                      <a href="#">Login</a>
+                      <br>
+                      <a href="#">Signup</a>
+
+                    </p>
+
+                    <p class="footer-company-name">GlueSpark &copy; 2017</p>
+                  </div>
+
+                  <div class="footer-center">
+
+                    <div>
+                        <br>
+                        <br>
+
+                      <i class="fa fa-map-marker"></i>
+                      <p><span>Lovely Professional University</span> Jalandhar, Punjab</p>
+                    </div>
+
+                    <div>
+                      <i class="fa fa-phone"></i>
+                      <p>+91 987654321</p>
+                    </div>
+
+                    <div>
+                      <i class="fa fa-envelope"></i>
+                      <p><a href="#">support@Gluespark.com</a></p>
+                    </div>
+
+                  </div>
+
+                  <div class="footer-right">
+                        <br>
+                        <br>
+                    <p class="footer-company-about">
+                      <span>About the company</span>
+                      Helping, You to get innovative ideas and feedbacks from your coustomer.
+                    </p>
+                    <br>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+
+
+                  </div>
+
+                </footer>
+
+
+        <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js"></script>
+    <script>
+        window.sr=ScrollReveal();
+        sr.reveal('.first-word', {
+          duration: 2000,
+          origin:'left'
+        });
+        sr.reveal('.third-word', {
+          duration: 2000,
+          origin:'bottom'
+        });
+        sr.reveal('.stepsicons',{
+            duration:3000,
+            origin:'bottom'
+
+        });
+        sr.reveal('.showcase-left', {
+          duration: 2000,
+          origin:'bottom'
+        });
+        sr.reveal('.showcase-right', {
+          duration: 2000,
+          origin:'bottom',
+          delay:500
+        });
+
+        $(document).ready(function(){
+
+            // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
+            $('.datepicker').pickadate({
+                selectMonths: true, // Creates a dropdown to control month
+                selectYears: 40, // Creates a dropdown of 15 years to control year,
+                today: 'Today',
+                clear: 'Clear',
+                close: 'Ok',
+                closeOnSelect: false // Close upon selecting a date,
+            });
+
+            $(".button-collapse").sideNav();
+            $('.owl-carousel').owlCarousel({
+                    loop:true,
+                    margin:10,
+                    nav:true,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:3
+                        },
+                        1000:{
+                            items:4
+                        }
+                    }
+                });
+                 // custom formatting example
+
+
+
+        });
+
+
+            $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('nav').addClass('shrink');
+                $('.nav-wrapper').addClass('shrinkthis');
+                $('.items').addClass('changecolor');
+                $('.logo1').show();
+                $('.logo2').hide();
+            } else {
+                $('nav').removeClass('shrink');
+                $('.nav-wrapper').removeClass('shrinkthis');
+                $('.items').removeClass('changecolor');
+                $('.logo1').hide();
+                $('.logo2').show();
+            }
+            $(".slidethis").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+            $(this).addClass("slide");
+            }
+            });
+
+            if( $(this).scrollTop() < $('.timer').position().top )
+            {
+
+                // start all the timers
+
+                $('.timer').each(count);
+
+
+                function count(options)
+                {
+                    var $this = $(this);
+                    options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+                    $this.countTo(options);
+                }
+            }
+
+        });
+
+    </script>
+    <script>
+    	function shubham()
+    	{
+    		var x=document.getElementById('search').value;
+    		if(x=='sabstore')
+    		{
+    			window.open('substore2.html','_self');
+    		}
+    	};
+    </script>
+
 </body>
 </html>
