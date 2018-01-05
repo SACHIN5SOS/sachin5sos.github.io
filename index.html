@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    
+
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -18,37 +18,62 @@
 
 <body>
   <header>
-<div class="container">
+      <nav class="nav justify-content-center">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Contact us</a>
+      </nav>
+    <!-- <span class="typed" style="color:black;"></span> -->
+      <h1>Sachin Is  a<br><span class="typed" style="color:white;"></span></h1>
 
-  <h1 class="logo">Generico<span>Logo</span></h1>
-
-  <nav class="site-nav">
-      <ul>
-        <li><a href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li>
-        <li><a href=""><i class="fa fa-info site-nav--icon"></i>About</a></li>
-        <li><a href=""><i class="fa fa-pencil site-nav--icon"></i>Blog</a></li>
-        <li><a href=""><i class="fa fa-usd site-nav--icon"></i>Pricing</a></li>
-        <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
-      </ul>
-  </nav>
-
-  <div class="menu-toggle">
-    <div class="hamburger"></div>
-  </div>
-
-</div>
-
-</header>
-<section>
-  <h1>
-    UI UX Developer From India
-  </h1>
-</section>
+  </header>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script  src="index.js"></script>
+  <Script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+  <script>
+  window.sr = ScrollReveal();
+  sr.reveal('body',{
+  origin: 'bottom',
+  delay: 500
+  });
+  $(function(){
+	$(".typed").typed({
+		strings: ["UI Developer.", "UX Designer.", "Content Writer","CS Student."],
+		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+		stringsElement: null,
+		// typing speed
+		typeSpeed: 30,
+		// time before typing starts
+		startDelay: 1200,
+		// backspacing speed
+		backSpeed: 20,
+		// time before backspacing
+		backDelay: 500,
+		// loop
+		loop: true,
+		// false = infinite
+		infinite:true,
+		// show cursor
+		showCursor: false,
+		// character for cursor
+		cursorChar: "|",
+		// attribute to type (null == text)
+		attr: null,
+		// either html or text
+		contentType: 'html',
+		// call when done callback function
+		callback: function() {},
+		// starting callback function before each string
+		preStringTyped: function() {},
+		//callback for every typed string
+		onStringTyped: function() {},
+		// callback for reset
+		resetCallback: function() {}
+	});
+});
+  </script>
 
 </body>
 </html>
