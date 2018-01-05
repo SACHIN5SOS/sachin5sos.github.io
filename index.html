@@ -9,38 +9,80 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
-
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Work+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-      <link rel="stylesheet" href="style.css">
-
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
       <nav class="nav justify-content-center">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link " href="#">Home</a>
+        <a class="nav-link scroll-link" href="#about">About</a>
         <a class="nav-link" href="#">Contact us</a>
       </nav>
     <!-- <span class="typed" style="color:black;"></span> -->
-      <h1>Sachin Is  a<br><span class="typed" style="color:white;"></span></h1>
 
-  </header>
+      <div>
+        <h1>
+
+              Sachin Is <br>: <span class="typed" style="color:white;"><br>
+              </span>
+
+
+        </h1>
+      </div>
+      <br><br>
+      <br>
+      <Br>
+      <div>
+        <button class="scroll-link" href="#about" >More About Me</button>
+      </div>
+
+   </header>
+<section id="about">
+  <div class="container">
+    <div class="col-md-8">
+      <h1 class="aboutHeading">Design.<br>Development.<br>Ideas.<br>Cofee.</h1>
+      <br>
+      <p class="explanation">
+        My Name is Sachin Bhandari. I am Indian UX/UI Developer, works with
+        Prototype model, Responsive Web Design & Web Development.
+      </p>
+      <br>
+      <p class="smallExplanation">
+        I am Currently in second year studying B.Tech Computer Science
+        From Lovely Professional University, Punjab, India.
+        <br>
+        In my free time I listen music and spend my time in videogames or
+        in Cricket. And Currently I am learning Server Side Javascript
+        so that I can expand my Stack.
+      </p>
+
+    </div>
+  </div>
+  <section>
+
+
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <Script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
   <script>
+
   window.sr = ScrollReveal();
   sr.reveal('body',{
   origin: 'bottom',
   delay: 500
   });
   $(function(){
+    $('.scroll-link').on('click',function(){
+    $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top},500);
+    return false;
+  });
 	$(".typed").typed({
-		strings: ["UI Developer.", "UX Designer.", "Content Writer","CS Student."],
+		strings: ["UI Developer.", "UX Designer.", "Content Writer","Learner"],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed

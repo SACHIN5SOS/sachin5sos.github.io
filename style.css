@@ -7,10 +7,23 @@ body{
 }
 
 /*hero Page */
+section{
+  min-height: 100vh;
+}
 header{
   min-height: 100vh;
   background-color: #000000;
-  color:#fff;
+  background-image: url('image.jpg');
+  background-position: center center;
+  background-repeat: no repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  vertical-align: center;
+  text-align: center;
+}
+header>div>h1{
+  color:#ffffff;
+  display: inline-block;
 }
 nav{
   padding:4%;
@@ -41,18 +54,52 @@ nav>a{
     width: 100%;
     /*transition: width .3s;*/
 }
-header>h1{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
+
+header>div>button {
+    display: inline-block;
+    color: #ffffff;
+    background: #060719;
+    padding: 12px 17px;
+    font-family: 'OpenSansBold', sans-serif;
+    border: 3px solid #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #31302B;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+}
+button:hover {
+    box-shadow: inset 200px 0 0 0 #ffffff;
+    color: #060719;
+}
+.aboutHeading{
+  font-size:96px;
+  line-height:105px;
 }
 
-
-
+/*Second Section*/
+.explanation{
+  color: #000000;
+  line-height: 48px;
+  font-size: 32px;
+  font-weight:300;
+}
+.smallExplanation{
+  color: #999999;
+  font-size: 24px;
+  line-height: 43.3px;
+}
 /*Media Queries */
 @media (max-width: 500px){
-  h1{
+  header>div>h1{
+    color:#ffff;
     font-size: 1.5em;
   }
 
@@ -62,5 +109,16 @@ header>h1{
     transition: all ease 2s;
     display: inline-block;
 
+  }
+
+  .aboutHeading{
+    font-size:36px;
+    line-height:50px;
+  }
+  .explanation{
+    font-size: 30px;
+  }
+  .shortExplanation{
+    font-size: 20px;
   }
 }
