@@ -98,7 +98,19 @@ button:hover {
 }
 /*Media Queries */
 @media (max-width: 500px){
+  header{
+    min-height: 100vh;
+    background-color: #000000;
+    background-image: url('image.jpg');
+    background-position: center center;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    vertical-align: center;
+    text-align: center;
+  }
   header>div>h1{
+    padding-top:30%;
     color:#ffff;
     font-size: 1.5em;
   }
