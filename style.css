@@ -22,7 +22,7 @@ section
 header{
   min-height: 100vh;
   background-color: #000000;
-  background-image: url('image/image.jpg');
+  background-image: url('image/image-min.jpg');
   background-position: center;
   background-repeat: no repeat;
   background-size: cover;
@@ -195,7 +195,7 @@ section#project{
   header{
     min-height: 100vh;
     background-color: #000000;
-    background-image: url('image.jpg');
+    background-image: url('image/image-min.jpg');
     background-position: center center;
     background-repeat: no repeat;
     background-size: cover;
