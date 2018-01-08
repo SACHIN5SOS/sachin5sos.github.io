@@ -20,6 +20,7 @@ section
 }
 
 header{
+  position: relative;
   min-height: 100vh;
   background-color: #000000;
   background-image: url('image/image-min.jpg');
