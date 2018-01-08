@@ -146,7 +146,7 @@ section{
   position: relative;
 }
 section#project{
-  background-image:url('Skewed.png');
+  background-image:url('Skewed.svg');
   background-size: cover;
   background-repeat: no-repeat;
   padding-top:20%;
