@@ -1,9 +1,11 @@
-html{
+html
+{
   background-color: white;
 }
 
 
-body{
+body
+{
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -12,9 +14,11 @@ body{
 
 
 /*hero Page */
-section{
+section
+{
   min-height: 100vh;
 }
+
 header{
   min-height: 100vh;
   background-color: #000000;
@@ -26,6 +30,7 @@ header{
   vertical-align: center;
   text-align: center;
 }
+
 header>div>h1{
   color:#ffffff;
   font-family: 'Poppins', sans-serif;
@@ -96,6 +101,7 @@ button:hover {
   line-height:105px;
 }
 
+
 /*Second Section*/
 .explanation{
   color: #000000;
@@ -133,6 +139,9 @@ button:hover {
   box-shadow: inset 205px 0 0 0 #000000;
   color: #ffffff;
 }
+
+
+/*Project Section*/
 section{
   position: relative;
 }
@@ -177,6 +186,7 @@ section#project{
     font-size:36px;
     line-height:50px;
   }
+
   .explanation{
     font-size: 30px;
   }
