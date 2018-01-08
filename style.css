@@ -1,10 +1,14 @@
 html{
   background-color: white;
 }
+
+
 body{
   padding: 0;
   margin: 0;
 }
+
+
 
 /*hero Page */
 section{
@@ -23,6 +27,7 @@ header{
 }
 header>div>h1{
   color:#ffffff;
+  font-family: 'Poppins', sans-serif;
   display: inline-block;
 }
 nav{
@@ -33,52 +38,58 @@ nav>a{
 }
 .nav-link{
   color:#999999;
+  font-family: 'Poppins', sans-serif;
   font-size:1.5em;
   transition: all ease 2s;
   display: block;
 
 }
 .nav-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition:  .3s;
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition:  .3s;
 }
+
 .nav-link:hover{
   color:#ffff;
   font-weight: bolder;
 }
+
 .nav-link:hover::after {
     width: 100%;
     /*transition: width .3s;*/
 }
 
-header>div>button {
-    display: block;
-    color: #ffffff;
-    background: #060719;
-    padding: 12px 17px;
-    font-family: 'OpenSansBold', sans-serif;
-    border: 3px solid #ffffff;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    border-radius: 2px;
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: inset 0 0 0 0 #31302B;
+header>div>button 
+{
+  display: block;
+  color: #ffffff;
+  background: #060719;
+  padding: 12px 17px;
+  font-family: 'Work Sans', sans-serif;
+  border: 3px solid #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #31302B;
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
 	transition: all ease 0.8s;
 }
+
 button:hover {
-    box-shadow: inset 200px 0 0 0 #ffffff;
-    color: #060719;
+  box-shadow: inset 200px 0 0 0 #ffffff;
+  color: #060719;
 }
+
 .aboutHeading{
   font-size:96px;
   line-height:105px;
@@ -102,13 +113,13 @@ button:hover {
   color: #000000;
   background: #ffffff;
   padding: 12px 17px;
-  font-family: 'OpenSansBold', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   border: 3px solid #000000;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-radius: 2px;
+  border-radius: 4px;
   display: inline-block;
   text-align: center;
   cursor: pointer;
@@ -116,14 +127,15 @@ button:hover {
   -webkit-transition: all ease 0.8s;
   -moz-transition: all ease 0.8s;
   transition: all ease 0.8s;
-  }
+}
 .white-button:hover {
   box-shadow: inset 205px 0 0 0 #000000;
-  border:3px solid #ffffff;
   color: #ffffff;
 }
-
-
+section#project{
+  background-color: #757575;
+  min-height: 600px;
+}
 
 
 
