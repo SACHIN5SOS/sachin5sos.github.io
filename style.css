@@ -22,7 +22,7 @@ section
 header{
   min-height: 100vh;
   background-color: #000000;
-  background-image: url('image.jpg');
+  background-image: url('image/image.jpg');
   background-position: center;
   background-repeat: no repeat;
   background-size: cover;
@@ -146,11 +146,46 @@ section{
   position: relative;
 }
 section#project{
-  background-image:url('Skewed.svg');
+  background-image:url('image/Skewed.svg');
   background-size: cover;
   background-repeat: no-repeat;
   padding-top:20%;
   padding-bottom:20%;
+}
+.Project-heading{
+  font-size:5rem;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+.project-button{
+  outline: hidden;
+  display: block;
+  color: #ffffff;
+  background: #757575;
+  padding: 16px 40px;
+  font-family: 'Work Sans', sans-serif;
+  border: 3px solid #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #ffffff;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+.project-button:hover {
+  box-shadow: inset 250px 0 0 0 #ffffff;
+  color: #000000;
+}
+.project-div{
+  margin-top:15%;
+  margin-bottom:5%;
 }
 
 
@@ -192,5 +227,8 @@ section#project{
   }
   .shortExplanation{
     font-size: 20px;
+  }
+  .Project-heading{
+    font-size:4rem;
   }
 }
