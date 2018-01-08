@@ -6,6 +6,7 @@ html{
 body{
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 
@@ -132,9 +133,15 @@ button:hover {
   box-shadow: inset 205px 0 0 0 #000000;
   color: #ffffff;
 }
+section{
+  position: relative;
+}
 section#project{
-  background-color: #757575;
-  min-height: 600px;
+  background-image:url('Skewed.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top:20%;
+  padding-bottom:20%;
 }
 
 
