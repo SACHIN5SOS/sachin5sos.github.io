@@ -1,6 +1,6 @@
 html
 {
-  background-color: white;
+  background-color: #000000;
 }
 
 
@@ -185,8 +185,44 @@ section#project{
   color: #000000;
 }
 .project-div{
-  margin-top:15%;
+  margin-top:5%;
   margin-bottom:5%;
+}
+
+/* Contact Section*/
+section#contact{
+  min-height: 100vh;
+  background-color: #000000;
+  font-family: 'Poppins', sans-serif;
+  color:#ffffff;
+  margin-top: -1%;
+  margin-bottom: 0%;
+}
+
+.black-button{
+  outline: hidden;
+  display: block;
+  color: #ffffff;
+  background: #000000;
+  padding: 12px 17px;
+  font-family: 'Work Sans', sans-serif;
+  border: 3px solid #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #31302B;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+.black-button:hover {
+  box-shadow: inset 205px 0 0 0 #ffffff;
+  color: #000000;
 }
 
 
@@ -194,7 +230,7 @@ section#project{
 /*Media Queries */
 @media (max-width: 500px){
   header{
-    min-height: 100vh;
+    min-height: 70vh;
     background-color: #000000;
     background-image: url('image/image-min.jpg');
     background-position: center center;
@@ -232,4 +268,12 @@ section#project{
   .Project-heading{
     font-size:4rem;
   }
+  
+.project-div{
+  margin-top:15%;
+  margin-bottom:5%;
+}
+section#contact{
+  margin-top: -3.5%;
+}
 }
