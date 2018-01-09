@@ -224,7 +224,21 @@ section#contact{
   box-shadow: inset 205px 0 0 0 #ffffff;
   color: #000000;
 }
-
+.contact-Explanation{
+  font-size:32px;
+  font-family: 'Work Sans', sans-serif;
+}
+.small-Explanation{
+  font-family: 'Work Sans', sans-serif;
+  color:#999999;
+  font-size:24px;
+}
+.bigger{
+  width:200px;
+  height:50px;
+  margin-right:4%;
+  margin-bottom: 10%;
+}
 
 
 /*Media Queries */
@@ -276,4 +290,25 @@ section#contact{
 section#contact{
   margin-top: -3.5%;
 }
+.bigger{
+  width:300px;
+  margin-bottom: 5%;
 }
+}
+
+/*For Ipads */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  header{
+    min-height:80vh;
+  }
+  section#contact{
+    min-height: 90vh;
+  }
+  .bigger{
+    
+  width:300px;
+  margin-bottom: 5%;
+  margin-right:50%;
+  }
+}
+  
