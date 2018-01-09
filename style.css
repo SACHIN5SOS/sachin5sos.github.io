@@ -279,7 +279,7 @@ section#contact{
 /*Media Queries */
 @media (max-width: 500px){
   header{
-    min-height: 70vh;
+    min-height: 100vh;
     background-color: #000000;
     background-image: url('image/image-min.jpg');
     background-position: center center;
@@ -334,7 +334,7 @@ section#contact{
 /*For Ipads */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
   header{
-    min-height:80vh;
+    min-height:90vh;
   }
   section#contact{
     min-height: 90vh;
