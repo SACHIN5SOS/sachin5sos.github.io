@@ -147,7 +147,7 @@ section{
   position: relative;
 }
 section#project{
-  backgorund-color:#757575;
+  background-color:#757575;
   clip-path:polygon(0 3%,100% 0%,100% 100%,0 97%);
   z-index:99;
   background-repeat: no-repeat;
