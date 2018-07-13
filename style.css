@@ -147,8 +147,9 @@ section{
   position: relative;
 }
 section#project{
-  background-image:url('image/Skewed.svg');
-  background-size: cover;
+  backgorund-color:#757575;
+  clip-path:polygon(0 3%,100% 0%,100% 100%,0 97%);
+  z-index:99;
   background-repeat: no-repeat;
   padding-top:20%;
   padding-bottom:20%;
@@ -195,8 +196,9 @@ section#contact{
   background-color: #000000;
   font-family: 'Poppins', sans-serif;
   color:#ffffff;
-  margin-top: -1%;
+  margin-top: -10%;
   margin-bottom: 0%;
+	padding:5%;
 }
 
 .black-button{
@@ -331,7 +333,7 @@ section#contact{
   margin-bottom:5%;
 }
 section#contact{
-  margin-top: -3.5%;
+  margin-top: -30.5%;
 }
 .bigger{
   width:300px;
