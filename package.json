@@ -24,9 +24,9 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "gh-pages": "^6.1.1"
+    "typescript": "^5"
   },
   "homepage": "https://github.com/SACHIN5SOS/sachin5sos.github.io"
 }
