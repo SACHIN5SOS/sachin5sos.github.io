@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Poppins", sans-serif;
+    --font-mono: "Sorts Mill Goudy", monospace;
+}
+
+@layer base {
+    body {
+        @apply bg-white text-gray-800 antialiased text-sm;
+    }
+
+    button {
+        @apply cursor-pointer;
+    }
+}
