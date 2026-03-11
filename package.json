@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "export": "next export",
-    "deploy": "gh-pages -d out"
+    "deploy": "next build && touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "lenis": "^1.3.15",
